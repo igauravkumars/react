@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+
+      let myRoot = document.getElementById("root")
+
+      //Simple JSX Element
+
+    //   let element = <div><p>Seize the day</p></div>
+
+    //   ReactDOM.createRoot(myRoot).render(element)
+
+      //Dynamic Content in JSX
+
+    //   let text ="Seize the day"
+    //   let element1 = <div><p>{text}</p></div>
+
+    //   ReactDOM.createRoot(myRoot).render(element1)
+
+
+      // Conditional Rendering in JSX
+      
+      let flag = false;
+      let text ="Seize the day"
+      
+      let element1 = <div><p>Seize the day</p></div>
+      let element2 = <div><p>Seize the day with else</p></div>
+
+     if(flag){
+        ReactDOM.createRoot(myRoot).render(element1)
+     }else{
+        ReactDOM.createRoot(myRoot).render(element2)
+     }
+     
+
+    </script>
+</body>
+</html>
